@@ -1,0 +1,32 @@
+{
+  "name": "react-typescript",
+  "version": "1.0.0",
+  "description": "Minimal boilerplate for a single-page app using React, TypeScript with JSX (TSX), and Visual Studio Code.",
+  "repository": "bvanreeven/react-typescript",
+  "main": "index.js",
+  "dependencies": {
+    "office-ui-fabric-react": "^1.11.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "stux": "^0.5.1",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^0.14.39",
+    "@types/react-dom": "^0.14.17",
+    "@types/q": "^0.0.32",
+    "concurrently": "^3.1.0",
+    "mkdirp": "^0.5.1",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.9.0",
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "http-server",
+    "dev": "concurrently --kill-others --prefix [{name}] --names WEBPACK,HTTP \"webpack -wd --colors\" \"http-server\""
+  },
+  "author": "Benny van Reeven",
+  "license": "MIT"
+}

@@ -1,0 +1,5 @@
+@media (min-width: 480px) {
+  .ms-Dialog-main.QnAAskQuestionDialog {
+      max-width: 420px;
+  }
+}

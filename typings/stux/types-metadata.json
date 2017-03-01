@@ -1,0 +1,31 @@
+{
+    "name": "stux",
+    "libraryName": "Stux (stux)",
+    "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+    "data": {
+        "authors": "Asana <https://asana.com>, AssureSign <http://www.assuresign.com>, Microsoft <https://microsoft.com>",
+        "dependencies": {
+            "react": "*"
+        },
+        "pathMappings": {},
+        "libraryMajorVersion": 0,
+        "libraryMinorVersion": 14,
+        "typeScriptVersion": "2.1",
+        "libraryName": "React (stux)",
+        "typingsPackageName": "stux",
+        "projectName": "http://facebook.github.io/react/",
+        "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+        "globals": [
+            "ReactDOM",
+            "ReactDOMServer"
+        ],
+        "declaredModules": [
+            "stux/."
+        ],
+        "files": [
+            "index.d.ts"
+        ],
+        "hasPackageJson": false
+    },
+    "isLatest": true
+}
