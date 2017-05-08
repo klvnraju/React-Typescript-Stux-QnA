@@ -3,6 +3,8 @@ import { Link } from 'office-ui-fabric-react/lib/Link';
 import { Question, QnABaseItem, QnAItemStatus } from '../contracts';
 import { IPublisherDetails, IUserDetails } from './QnAContainer';
 
+import './QnAItemRow.scss';
+
 export interface Props {
     question: Question;
     publisherDetails: IPublisherDetails;
@@ -65,7 +67,7 @@ export class QnAItemRow extends React.Component<Props, State> {
             actionLinks.push(<Link href="#" key="answerButton" onClick={this.AnswerClick} style={styles.actionLinksStyle}>Reply</Link>);
         }
 
-        return <div className="ms-Grid-row" style={styles.trStyle}>
+        return <div className="ms-Grid-row trStyle">
             <div className="ms-Grid-col ms-u-sm1" style={styles.userImageTdStyle}>
                 <img style={styles.userImageStyle} src={image}></img>
             </div>
@@ -153,7 +155,7 @@ var ReadMoreContent = (props: {qnaItem: QnABaseItem, parentProps: Props}): JSX.E
             <div style={styles.readMoreContainerStyle}>
                 <span style={styles.reviewTextStyle}>{props.qnaItem.text}</span>
             </div>
-            <span style={styles.reportReviewStyle} className='bowtie-icon bowtie-alert' title='Report Review'>
+            <span className='bowtie-icon bowtie-alert report-review-style' title='Report Review'>
             </span>
         </div>
         <div style={styles.readMoreControlStyle}>
@@ -197,14 +199,6 @@ var styles = {
         display: 'inline-block',
         fontSize: '14px',
         color: 'gray'
-    },
-    reportReviewStyle: {
-        float: 'right',
-        fontSize: '14px',
-        color: '#767676',
-        position: 'relative',
-        right: '5px',
-        top: '3px'
     },
     readMoreControlStyle: {
         marginTop: '12px',

@@ -5,6 +5,8 @@ import { TextField } from 'office-ui-fabric-react/lib/TextField';
 import { MessageBar } from 'office-ui-fabric-react/lib/MessageBar';
 import * as Q from 'q';
 
+import './AskQuestionDialog.scss';
+
 export interface Props {
     initialValue: string,
     placeholderText: string,

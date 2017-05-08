@@ -11,6 +11,8 @@ import { Question, QnABaseItem } from '../contracts';
 import { CommonStyles } from '../CommonStyles';
 import * as Q from 'q';
 
+import "./QnAContainer.scss";
+
 export interface IPublisherDetails {
     currentUserPublisher: boolean;
     publisherDisplayName: string;
@@ -103,7 +105,7 @@ export default class QnAContainerComponent extends React.Component<Props, State>
                 <div className="ms-Grid" style={styles.tableStyle}>
                   <div className="ms-Grid-row" style={styles.trStyle}>
                       <AskQuestionDialog {...askQuestionDialogProps} />
-                      <Button style={askAQuestionStyle} onClick={this.OnAskAQuestionClick} 
+                      <Button className="ask-question-button" style={askAQuestionStyle} onClick={this.OnAskAQuestionClick} 
                         ariaDescription='Ask a question' disabled={askAQuestionDisabled}>Ask a question</Button>
                       <h2 style={styles.qnaSectionHeader}>Customer Questions & Answers</h2>
                   </div>
@@ -203,7 +205,6 @@ var styles = {
     askQuestionButtonContainerStyle: {
             float: 'right',
             fontSize: '14px',
-            position: 'relative',
             right: '5px',
             top: '0px',
             backgroundColor: '#E2165E',

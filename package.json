@@ -6,21 +6,26 @@
   "main": "index.js",
   "dependencies": {
     "office-ui-fabric-react": "^1.11.0",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "stux": "^0.5.1",
-    "q": "^1.4.1"
+    "q": "^1.5.0"
   },
   "devDependencies": {
-    "@types/react": "^0.14.39",
-    "@types/react-dom": "^0.14.17",
-    "@types/q": "^0.0.32",
-    "concurrently": "^3.1.0",
+    "@types/q": "^1.0.0",
+    "@types/react": "^15.0.24",
+    "@types/react-dom": "^15.5.0",
+    "concurrently": "^3.4.0",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
     "mkdirp": "^0.5.1",
-    "source-map-loader": "^0.1.5",
-    "ts-loader": "^0.9.0",
-    "typescript": "^2.0.3",
-    "webpack": "^1.13.2"
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.17.0",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.1.5",
+    "webpack": "^2.5.1"
   },
   "scripts": {
     "build": "webpack",
