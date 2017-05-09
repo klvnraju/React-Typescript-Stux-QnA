@@ -32,8 +32,8 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "http-server",
-    "dev": "concurrently --kill-others --prefix [{name}] --names WEBPACK,HTTP \"webpack -wd --colors\" \"http-server\""
+    "start": "http-server -c-1",
+    "dev": "concurrently --kill-others --prefix [{name}] --names WEBPACK,HTTP \"webpack -wd --colors\" \"http-server -c-1\""
   },
   "author": "Benny van Reeven",
   "license": "MIT"
