@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'office-ui-fabric-react/lib/Link';
 import { Question, QnABaseItem, QnAItemStatus } from '../contracts';
 import { IPublisherDetails, IUserDetails } from './QnAContainer';
+import { StringUtils } from '../Utils/string';
 import * as moment from 'moment';
 import 'moment-shortformat';
 
@@ -152,7 +153,7 @@ var ReadMoreContent = (props: {qnaItem: QnABaseItem, parentProps: Props}): JSX.E
         displayName = props.qnaItem.user ? props.qnaItem.user.displayName : '';
     }
     var mom = moment(props.qnaItem.createdDate);
-    var userNameAndCreationDate = "By " + displayName + " on " + (mom as any).short();
+    var userNameAndCreationDate = StringUtils.format("By {0} on {1}", displayName, (mom as any).short());
     return <div>
         <div>
             <div style={styles.readMoreContainerStyle}>
