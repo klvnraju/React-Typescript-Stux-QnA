@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Link } from 'office-ui-fabric-react/lib/Link';
 import { Question, QnABaseItem, QnAItemStatus } from '../contracts';
 import { IPublisherDetails, IUserDetails } from './QnAContainer';
+import * as moment from 'moment';
+import 'moment-shortformat';
 
 import './QnAItemRow.scss';
 
@@ -149,7 +151,8 @@ var ReadMoreContent = (props: {qnaItem: QnABaseItem, parentProps: Props}): JSX.E
     } else {
         displayName = props.qnaItem.user ? props.qnaItem.user.displayName : '';
     }
-    var userNameAndCreationDate = "By " + displayName + " on " + props.qnaItem.createdDate;
+    var mom = moment(props.qnaItem.createdDate);
+    var userNameAndCreationDate = "By " + displayName + " on " + (mom as any).short();
     return <div>
         <div>
             <div style={styles.readMoreContainerStyle}>
