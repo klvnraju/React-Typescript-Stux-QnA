@@ -18,8 +18,7 @@ To build the project from the command-line:
 
 To view the app in the browser:
 
-* `npm install -g http-server`
-* `http-server`
+* `npm run start`
 * Open [http://localhost:8080/](http://localhost:8080/) in your browser of choice.
 
 To develop using Visual Studio Code:
