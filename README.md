@@ -13,7 +13,7 @@ To build the project from the command-line:
 
 * Install [Node.js](https://nodejs.org/)
 * `npm install`
-* Note: For stux to build properly - copy typings\stux folder to node_modules\@types.
+* Note: For stux to build properly - copy typings\stux folder to @types folder inside node_modules folder.
 * `npm run build`
 
 To view the app in the browser:
